@@ -1,11 +1,11 @@
 function scrollHandler() {
 	if ($(document).scrollTop() > $('.splash').height()*0.7 || $('nav ul').hasClass('visible')) {
 		$('.navEntry').css({
-			backgroundPosition: '0 0',
+			backgroundPosition: '0 100%',
 		});
 	} else {
 		$('.navEntry').css({
-			backgroundPosition: '0 -100%',
+			backgroundPosition: '0 0',
 		});
 	}
 }
