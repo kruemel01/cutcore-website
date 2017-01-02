@@ -148,3 +148,7 @@ h3 {
   flex: 1;
   padding-left: 25px;
 }
+
+@media (max-width: 750px), (orientation: portrait) {
+  /* TODO: responsive*/
+}
