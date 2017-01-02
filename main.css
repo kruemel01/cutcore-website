@@ -21,11 +21,15 @@ nav {
 h1 {
   position: relative;
   font-weight: 900;
-  color: white;
   margin-top: 30px;
   padding: 10px;
   margin-left: 40px;
   display: inline-block;
+}
+
+h1 a {
+  color: white;
+  text-decoration: none;
 }
 
 nav ul {
