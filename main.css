@@ -92,5 +92,58 @@ p {
 }
 
 .person img {
+  margin: 25px;
+  height: 150px;
+  width: 150px;
   border-radius: 100%;
+}
+
+h3 {
+  margin-top: 25px;
+  margin-bottom: 0px;
+  display: inline-block;
+}
+
+.person {
+  display: flex;
+  background-color: rgba(160,150,150,0.3);
+  margin: 40px 20px;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.person a {
+  text-decoration: none;
+  color: #089970;
+  right: 10px;
+  float: right;
+  padding: 5px;
+  margin-top: 20px;
+  font-weight: 600;
+}
+
+.person span {
+  display: inline-block;
+  font-family: Merriweather, serif;
+  font-style: italic;
+  width: 100%;
+  font-size: 0.9em;
+  color: rgb(100,100,100);
+  font-weight: 300;
+}
+
+.person p {
+  margin-top: 7px;
+  font-size: 18px;
+  line-height: 27px;
+}
+
+.img-wrap {
+  height: 200px;
+  width: 200px;
+}
+
+.info-wrap {
+  flex: 1;
+  padding-left: 25px;
 }
