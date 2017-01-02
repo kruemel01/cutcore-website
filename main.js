@@ -48,6 +48,7 @@ function navigationHandler() {
 
 
 $(function() {
+	history.replaceState('', document.title, window.location.pathname);
 	scrollHandler();
 	$('a[href*="#"]:not([href="#"])').click(linkHandler);
 	$(document).scroll(scrollHandler);
