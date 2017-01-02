@@ -1,5 +1,5 @@
 function scrollHandler() {
-	if ($(document).scrollTop() > 500) {
+	if ($(document).scrollTop() > $('.splash').height()*0.7) {
 		$('.navEntry').css({
 			backgroundPosition: '0 0',
 		});
