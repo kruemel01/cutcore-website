@@ -8,6 +8,23 @@ function scrollHandler() {
 			backgroundPosition: '0 0',
 		});
 	}
+	let current = '';
+	if ($(document).scrollTop() >= $('#about').offset().top - 10) {
+		current = '#about';
+	}
+	if ($(document).scrollTop() >= $('#projects').offset().top - 10) {
+		current = '#projects';
+	}
+	if ($(document).scrollTop() >= $('#youtube').offset().top - 10) {
+		current = '#youtube';
+	}
+	if ($(document).scrollTop() >= $('#contact').offset().top - 10) {
+		current = '#contact';
+	}
+
+	$('a[href="' + current + '"]').css({
+		backgroundPosition: '0 50%',
+	});
 }
 
 function linkHandler() {
