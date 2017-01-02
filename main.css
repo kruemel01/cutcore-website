@@ -26,7 +26,6 @@ h1 {
   padding: 10px;
   margin-left: 40px;
   display: inline-block;
-  background-color: #000;
 }
 
 nav ul {
@@ -34,11 +33,11 @@ nav ul {
   margin-top: 30px;
   padding: 0;
   margin-right: 40px;
-  background-color: #000;
 }
 
 nav ul li {
   display: inline-block;
+  margin: -1.9px;
 }
 
 nav ul li a {
@@ -49,6 +48,15 @@ nav ul li a {
   font-size: 1.3em;
   font-weight: 900;
   color: white;
+}
+
+.navEntry {
+  background-size: 100% 200%;
+  background-image: linear-gradient(to bottom, black 50%, transparent 50%);
+  background-position: 0 -100%;
+  -webkit-transition: background-position 0.5s;
+  -moz-transition: background-position 0.5s;
+  transition: background-position 0.5s;
 }
 
 p {
