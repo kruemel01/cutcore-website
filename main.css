@@ -1,6 +1,7 @@
 body {
   padding: 0px;
   margin: 0px;
+  font-family: Raleway, Lato, sans-serif;
 }
 
 .splash {
@@ -9,4 +10,47 @@ body {
 
 .splash-image {
   width: 100%;
+}
+
+nav {
+  position: fixed;
+  top: 0px;
+  width: 100%;
+}
+
+h1 {
+  position: relative;
+  font-weight: 900;
+  color: white;
+  margin-top: 30px;
+  padding: 10px;
+  margin-left: 40px;
+  display: inline-block;
+  background-color: #000;
+}
+
+nav ul {
+  float: right;
+  margin-top: 30px;
+  padding: 0;
+  margin-right: 40px;
+  background-color: #000;
+}
+
+nav ul li {
+  display: inline-block;
+}
+
+nav ul li a {
+  display: inline-block;
+  padding: 10px;
+  text-transform: uppercase;
+  text-decoration: none;
+  font-size: 1.3em;
+  font-weight: 900;
+  color: white;
+}
+
+p {
+  font-family: Merriweather, serif;
 }
