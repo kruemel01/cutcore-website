@@ -66,3 +66,31 @@ nav ul li a {
 p {
   font-family: Merriweather, serif;
 }
+
+section {
+  margin: 0px auto;
+  padding-top: 100px;
+  width: 100%;
+  max-width: 1024px;
+}
+
+h2 {
+  text-transform: uppercase;
+  font-weight: 900;
+  color: #333333;
+}
+
+p {
+  font-size: 20px;
+  line-height: 30px;
+  color: #333333;
+  font-weight: 300;
+}
+
+.intro {
+  font-style: italic;
+}
+
+.person img {
+  border-radius: 100%;
+}
