@@ -25,6 +25,7 @@ function linkHandler() {
 
 
 $(function() {
+	scrollHandler();
 	$('a[href*="#"]:not([href="#"])').click(linkHandler);
 	$(document).scroll(scrollHandler);
 });
