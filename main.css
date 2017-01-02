@@ -54,6 +54,10 @@ nav ul li a {
   color: white;
 }
 
+li.icon {
+  display: none;
+}
+
 .navEntry {
   background-size: 100% 200%;
   background-image: linear-gradient(to bottom, black 50%, transparent 50%);
@@ -150,5 +154,30 @@ h3 {
 }
 
 @media (max-width: 750px), (orientation: portrait) {
-  /* TODO: responsive*/
+  h1 {
+    font-size: 2.5em;
+  }
+
+  nav ul li a {
+    font-size: 2.28em;
+  }
+
+  nav ul li:not(.icon) {
+    display: none;
+  }
+
+  li.icon {
+    display: inline-block;
+    position: absolute;
+    top: 30px;
+    right: 40px;
+  }
+
+  nav ul.visible li:not(.icon) {
+    display: block;
+    width: 60vw;
+    float: left;
+    margin-bottom: 10px;
+    margin-left: 40px;
+  }
 }

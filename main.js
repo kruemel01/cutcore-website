@@ -1,5 +1,5 @@
 function scrollHandler() {
-	if ($(document).scrollTop() > $('.splash').height()*0.7) {
+	if ($(document).scrollTop() > $('.splash').height()*0.7 || $('nav ul').hasClass('visible')) {
 		$('.navEntry').css({
 			backgroundPosition: '0 0',
 		});
@@ -12,7 +12,7 @@ function scrollHandler() {
 
 function linkHandler() {
 	if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
-    	var target = $(this.hash);
+    	let target = $(this.hash);
     	target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
     	if (target.length) {
     		$('html, body').animate({
@@ -21,6 +21,12 @@ function linkHandler() {
         	return false;
       	}
     }
+}
+
+function navigationHandler() {
+	let el = $('nav ul');
+	el.toggleClass('visible');
+	scrollHandler();
 }
 
 
