@@ -155,11 +155,11 @@ h3 {
 
 @media (max-width: 750px), (orientation: portrait) {
   h1 {
-    font-size: 40px;
+    font-size: 8vw;
   }
 
   nav ul li a {
-    font-size: 40px;
+    font-size: 8vw;
   }
 
   nav ul li:not(.icon) {
@@ -168,7 +168,7 @@ h3 {
 
   li.icon {
     display: inline-block;
-    position: absolute;
+    position: absolute;+
     top: 30px;
     right: 40px;
   }
