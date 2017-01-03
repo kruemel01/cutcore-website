@@ -45,7 +45,7 @@ h1 {
   font-weight: 900;
   margin-top: 30px;
   padding: 10px;
-  padding-left: 2em;
+  padding-left: 2.2em;
   margin-left: 40px;
   display: inline-block;
 }
@@ -54,12 +54,13 @@ h1 a::before {
   display: inline-block;
   content: " ";
   background-image: url("./img/spin.svg");
-  background-size: 100% 100%;
+  background-size: 1.4em 1.4em;
   height: 1.4em;
-  width: 1.4em;
+  width: 1.8em;
   position: absolute;
-  left: 10px;
+  left: 12px;
   top: 7px;
+  background-repeat: no-repeat;
 }
 
 h1 a {
