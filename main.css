@@ -157,12 +157,16 @@ h3 {
 }
 
 .person a {
-  text-decoration: none;
-  color: #089970;
   right: 10px;
   float: right;
   padding: 5px;
   margin-top: 20px;
+}
+
+.link {
+  text-decoration: none;
+  color: #089970;
+  font-family: Raleway;
   font-weight: 600;
 }
 
