@@ -1,0 +1,16 @@
+# Require all denied
+
+# Allow from all
+
+<IfModule mod_rewrite.c>
+	RewriteEngine On
+
+	RewriteCond %{REQUEST_URI} !^/img/.*$
+	RewriteCond %{REQUEST_URI} !^/js/.*$
+	RewriteCond %{REQUEST_URI} !^/css/.*$
+	RewriteCond %{REQUEST_URI} !^/(impressum|about|projekte|youtube|kontakt)$
+	RewriteRule /?.+ / [L,R]
+
+	RewriteRule impressum$ index.php?view=impressum [QSD,END]
+	RewriteRule (about|projekte|youtube|kontakt)$ index.php [QSD,END]
+</IfModule>
