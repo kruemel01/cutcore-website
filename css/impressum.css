@@ -1,0 +1,25 @@
+body {
+	width: 100%;
+	max-width: 1024px;
+	box-sizing: border-box;
+	padding: 20px;
+	margin: 0px auto;
+	font-family: Merriweather, serif;
+	font-size: 20px;
+	line-height: 30px;
+	font-weight: 300;
+}
+
+p {
+	text-align: justify;
+}
+
+h1, h2 {
+	font-family: Raleway, sans-serif;
+	color: #333333;
+	font-weight: 700;
+}
+
+h1 {
+	margin: 100px auto 50px;
+}

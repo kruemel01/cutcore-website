@@ -4,10 +4,14 @@ require_once '/twig/Autoloader.php';
 Twig_Autoloader::register();
 
 $loader = new Twig_Loader_Filesystem('./templates');
-$twig = new Twig_Environment($loader, array(
-));
+$twig = new Twig_Environment($loader, array());
 
-$template = $twig->load('index.html');
+if (isset($_GET['view']) && $_GET['view'] === 'impressum') {
+	$template = $twig->load('impressum.html');
+} else {
+	$template = $twig->load('index.html');
+}
+
 
 $data = array(
 	'aboutText' => "Hallu",
