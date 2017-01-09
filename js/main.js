@@ -1,3 +1,5 @@
+let windowScrollPosition;
+
 function scrollHandler() {
 	if ($(document).scrollTop() > $('.splash').height()*0.7 || $('nav ul').hasClass('visible')) {
 		$('.navEntry').css({
@@ -9,7 +11,7 @@ function scrollHandler() {
 		});
 	}
 
-	let current = '/';
+	let current = "/";
 
 	if ($(document).scrollTop() >= $('#about').offset().top - 10) {
 		current = 'about';
@@ -24,11 +26,13 @@ function scrollHandler() {
 		current = 'kontakt';
 	}
 
-	$('a[href="#' + current + '"]').css({
-		backgroundPosition: '0 50%',
-	});
+	if (current !== windowScrollPosition) {
+		$(".navEntry").removeClass("active");
+		$('a[href="#' + current + '"]').addClass("active");
 
-	history.replaceState('', document.title, current);
+		history.replaceState('', document.title, current);
+		windowScrollPosition = current;
+	}
 }
 
 function linkHandler() {
@@ -62,4 +66,5 @@ $(function() {
 	scrollHandler();
 	$('a[href*="#"]:not([href="#"])').click(linkHandler);
 	$(document).scroll(scrollHandler);
+	$(".navEntry").addClass("transition");
 });
