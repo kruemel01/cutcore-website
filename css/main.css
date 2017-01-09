@@ -2,6 +2,11 @@ body {
   padding: 0px;
   margin: 0px;
   font-family: Raleway, Lato, sans-serif;
+  font-feature-settings: 'lnum';
+  -moz-font-feature-settings: 'lnum=1';
+  -ms-font-feature-settings: 'lnum';
+  -webkit-font-feature-settings: 'lnum';
+  -o-font-feature-settings: 'lnum';
 }
 
 .splash {
