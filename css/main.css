@@ -29,13 +29,18 @@ footer img {
 
 footer span {
   position: absolute;
-  font-size: 2em;
+  font-size: 1em;
   font-weight: 900;
   text-align: center;
   display: block;
   width: 100%;
   bottom: 20px;
   color: white;
+}
+
+footer a {
+  color: white;
+  text-decoration: none;
 }
 
 nav {
