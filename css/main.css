@@ -2,6 +2,11 @@ body {
   padding: 0px;
   margin: 0px;
   font-family: Raleway, Lato, sans-serif;
+  font-feature-settings: 'lnum';
+  -moz-font-feature-settings: 'lnum=1';
+  -ms-font-feature-settings: 'lnum';
+  -webkit-font-feature-settings: 'lnum';
+  -o-font-feature-settings: 'lnum';
 }
 
 .splash {
@@ -24,13 +29,18 @@ footer img {
 
 footer span {
   position: absolute;
-  font-size: 2em;
+  font-size: 1em;
   font-weight: 900;
   text-align: center;
   display: block;
   width: 100%;
   bottom: 20px;
   color: white;
+}
+
+footer a {
+  color: white;
+  text-decoration: none;
 }
 
 nav {
@@ -53,7 +63,7 @@ h1 {
 h1 a::before {
   display: inline-block;
   content: " ";
-  background-image: url("./img/spin.svg");
+  background-image: url("/img/spin.svg");
   background-size: 1.4em 1.4em;
   height: 1.4em;
   width: 1.8em;
@@ -98,12 +108,15 @@ li.icon {
   background-size: 100% 300%;
   background-image: linear-gradient(to bottom, rgba(0,0,0,0) 0%, rgba(0,0,0,0) 33.33%, #dd0468 33.33%, #dd0468 66.66%, black 66.66%, black 100%);
   background-position: 0 0;
+}
+
+.navEntry.transition {
   -webkit-transition: background-position 0.5s;
   -moz-transition: background-position 0.5s;
   transition: background-position 0.5s;
 }
 
-.navEntry:hover {
+.navEntry:hover, .navEntry.active {
   background-position: 0 50% !important;
 }
 
