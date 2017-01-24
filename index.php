@@ -14,7 +14,9 @@ if (isset($_GET['view']) && $_GET['view'] === 'impressum') {
 	echo $template->render();
 } else {
 	$template = $twig->load('index.html');
-	$data = array(
+	$file = file_get_contents("data.json");
+	$data = json_decode($file, true);
+	/*$data = array(
 		'aboutText' => "Hallu",
 		'aboutPersons' => array(
 			array(
@@ -46,7 +48,7 @@ if (isset($_GET['view']) && $_GET['view'] === 'impressum') {
 				'id' => 'aPXcmB5pMpc',
 			),
 		),
-	);
+	);*/
 	echo $template->render($data);
 }
 ?>

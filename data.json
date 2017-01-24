@@ -1,0 +1,25 @@
+{
+    "aboutText": "Hallu",
+    "aboutPersons": [
+        {
+            "name": "Luis Dreyer",
+            "imgUrl": "https://api.adorable.io/avatars/285/luisdreyer.png",
+            "position": "Le oberboss",
+            "email": "luis@cutcore.de",
+            "text": "test"
+        },
+        {
+            "name": "Fabian Kästner",
+            "imgUrl": "https://api.adorable.io/avatars/285/fabiankaestner.png",
+            "position": "nuthing",
+            "email": "fabian@cutcore.de",
+            "text": "test"
+        }
+    ],
+    "youtubeVideos": [
+        {
+            "name": "Snowboarden im Zillertal",
+            "id": "PPQKoeJ-uxU"
+        }
+    ]
+}
