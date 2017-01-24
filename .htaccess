@@ -19,9 +19,9 @@
 	RewriteRule /?.+ / [L,R]
 
 	# Rewrite to impressum & end evaluation
-	RewriteRule impressum$ index.php?view=impressum [QSD,END]
+	RewriteRule impressum$ index.php?view=impressum [QSA,END]
 	# Rewrite to admin & end evaluation
-	RewriteRule admin index.php?view=admin [QSD,END]
+	RewriteRule admin index.php?view=admin [QSA,END]
 	# Rewrite to index & end evaluation
-	RewriteRule (about|projekte|youtube|kontakt)$ index.php [QSD,END]
+	RewriteRule (about|projekte|youtube|kontakt)$ index.php [QSA,END]
 </IfModule>
