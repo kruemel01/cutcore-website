@@ -15,13 +15,14 @@
 	RewriteCond %{REQUEST_URI} !^/(impressum|about|projekte|youtube|kontakt)$
 	# URI is not /admin or /admin/...
 	RewriteCond %{REQUEST_URI} !^/admin(/.*)?$
-	# Rewrite to index
+	RewriteCond %{QUERY_STRING} !redirected
+	# Redirect to index
 	RewriteRule /?.+ / [L,R]
 
 	# Rewrite to impressum & end evaluation
-	RewriteRule impressum$ index.php?view=impressum [QSA,END]
+	RewriteRule impressum$ index.php?view=impressum&redirected
 	# Rewrite to admin & end evaluation
-	RewriteRule admin index.php?view=admin [QSA,END]
+	RewriteRule admin index.php?view=admin&redirected
 	# Rewrite to index & end evaluation
-	RewriteRule (about|projekte|youtube|kontakt)$ index.php [QSA,END]
+	RewriteRule (about|projekte|youtube|kontakt)$ index.php?redirected
 </IfModule>
