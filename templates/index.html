@@ -44,10 +44,12 @@
       <h2>Youtube</h2>
       <div class="youtube-grid">
         {% for video in youtubeVideos %}
+        <a href="https://youtube.de/watch?v={{ video.id }}">
         <div class="video">
           <img src="https://img.youtube.com/vi/{{ video.id }}/maxresdefault.jpg" alt="">
           <span>{{ video.name }}</span>
         </div>
+        </a>
         {% endfor %}
       </div>
     </section>
