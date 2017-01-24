@@ -1,5 +1,3 @@
-let windowScrollPosition;
-
 function scrollHandler() {
 	if ($(document).scrollTop() > $('.splash').height()*0.7 || $('nav ul').hasClass('visible')) {
 		$('.navEntry').css({
@@ -10,29 +8,23 @@ function scrollHandler() {
 			backgroundPosition: '0 0',
 		});
 	}
-
-	let current = "/";
-
+	let current = '';
 	if ($(document).scrollTop() >= $('#about').offset().top - 10) {
-		current = 'about';
+		current = '#about';
 	}
-	if ($(document).scrollTop() >= $('#projekte').offset().top - 10) {
-		current = 'projekte';
+	if ($(document).scrollTop() >= $('#projects').offset().top - 10) {
+		current = '#projects';
 	}
 	if ($(document).scrollTop() >= $('#youtube').offset().top - 10) {
-		current = 'youtube';
+		current = '#youtube';
 	}
-	if ($(document).scrollTop() >= $('#kontakt').offset().top - 10) {
-		current = 'kontakt';
+	if ($(document).scrollTop() >= $('#contact').offset().top - 10) {
+		current = '#contact';
 	}
 
-	if (current !== windowScrollPosition) {
-		$(".navEntry").removeClass("active");
-		$('a[href="#' + current + '"]').addClass("active");
-
-		history.replaceState('', document.title, current);
-		windowScrollPosition = current;
-	}
+	$('a[href="' + current + '"]').css({
+		backgroundPosition: '0 50%',
+	});
 }
 
 function linkHandler() {
@@ -57,14 +49,7 @@ function navigationHandler() {
 
 $(function() {
 	history.replaceState('', document.title, window.location.pathname);
-	if (window.location.pathname !== '/') {
-		let target = $('#' + window.location.pathname.slice(1));
-		if (target.length) {
-			$('html, body').scrollTop(target.offset().top);
-		}
-	}
 	scrollHandler();
 	$('a[href*="#"]:not([href="#"])').click(linkHandler);
 	$(document).scroll(scrollHandler);
-	$(".navEntry").addClass("transition");
 });
