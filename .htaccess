@@ -2,6 +2,16 @@
 
 # Allow from all
 
+Order Deny,Allow
+Deny from all
+
+<Files /index.php>
+	Order Allow,Deny
+	Allow from all
+</Files>
+
+
+
 <IfModule mod_rewrite.c>
 	RewriteEngine On
 
