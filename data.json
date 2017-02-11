@@ -1,26 +1,46 @@
 {
-    "aboutText": "Hallu",
+    "aboutText": "Hey! Willkommen auf unserer cutcore Website. Wir sind eine Schülergruppe, die sich für die Videoproduktion begeistert. Aber nicht nur! Auf dieser Seite findest du ausgewählte Projekte, die wir in der Vergangenheit umgesetzt haben. Freut uns, dass du dich für unsere Arbeit interessierst!",
     "aboutPersons": [
         {
             "name": "Luis Dreyer",
-            "imgUrl": "https://api.adorable.io/avatars/285/luisdreyer.png",
-            "position": "Le oberboss",
+            "imgUrl": "http://www.mediafire.com/convkey/14a5/dmjl2go5sll01nozg.jpg",
+            "position": "Gründer, kreative Leitung & Editor",
             "email": "luis@cutcore.de",
-            "text": "test"
+            "text": "Hallo! Ich bin Luis, Schüler am Elisabth Langgässer Gymnasium in Alzey und bin in vielen Bereichen aktiv. Ich trainiere Taekwondo, musiziere und beteilige mich aktiv an verschiedenen Schulprojekten."
         },
         {
             "name": "Fabian Kästner",
-            "imgUrl": "https://api.adorable.io/avatars/285/fabiankaestner.png",
-            "position": "nuthing",
+            "imgUrl": "http://www.mediafire.com/convkey/4f33/gm8ea63gmu4imt0zg.jpg",
+            "position": "Technische Leitung & Webdesign",
             "email": "fabian@cutcore.de",
-            "text": "test"
+            "text": "Hi! Ich bin Fabian. Ich besuche die 11. Klasse des ELG in Alzey, spiele neben der Schule Volleyball und kletter gerne. Außerdem übernehme ich die Tontechnik bei Schulveranstaltungen."
         }
     ],
-    "projectText": "Projektesdfsadf",
+    "projectText": "Unsere Projekte sind aktuell vor allem auf die Schule bezogen. Zum Beispiel findet ihr bei den YouTube Videos einen Clip aus dem Physikunterricht zum Thema U-Boote. Außerdem gestalteten wir für eine Konzertveranstaltung unserer Schule eine Programmführung in Form von kurzen Videoeinspielern mit der Unterstützung von Schülern der Video Association. Darüberhinaus erstellten wir bereits viele verschiedene Videos für den parva Verlag - von Musikvideos bis hin zu Produkttrailern.",
     "youtubeVideos": [
         {
+            "name": "Wenn ich an Weihnachten denk",
+            "id": "3oKww_MevrU"
+        },
+		{
+            "name": "'Toll' - Mathias Gall und GALLant",
+            "id": "w5X_TqGtRmw"
+        },
+		{
             "name": "Snowboarden im Zillertal",
             "id": "PPQKoeJ-uxU"
+        },
+		{
+            "name": "Die Funktionsweise eines U-Boots",
+            "id": "TnlLgY1s4c8"
+        },
+		{
+            "name": "Flötenspieler (Produkttrailer)",
+            "id": "9njEQuMbHwA"
+        },
+		{
+            "name": "Befruchtung einer Kirschblüte (2012)",
+            "id": "5mC4Hp64dxE"
         }
     ]
 }
